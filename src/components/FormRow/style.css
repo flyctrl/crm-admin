@@ -1,0 +1,77 @@
+.search-wrap-coll {
+  margin: 18px 0;
+  border: none;
+  min-width: 870px;
+  border-radius: 0 !important;
+  :global(.ant-collapse-header) {
+    border: 1px solid #DDD;
+    border-radius: 0 !important;
+  }
+  :global(.ant-collapse-content) {
+    padding: 0;
+    border-top: 0;
+    border-radius: 0 !important;
+  }
+  :global(.ant-collapse-content-box) {
+    padding: 0;
+  }
+  :global(.ant-collapse-item) {
+    border-bottom: none;
+  }
+  .search-wrap {
+    margin: 0;
+    border-top: none;
+    max-height: 300px;
+    overflow-y: auto;
+  }
+}
+
+.search-wrap {
+  width: 100%;
+  margin: 18px 0;
+  border: 1px solid #DDD;
+  .search-title {
+    line-height: 40px;
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  :global(.ant-form-item) {
+    margin-bottom: 0;
+  }
+  :global(.ant-row) {
+    border-bottom: 1px solid #DDD;
+  }
+  :global(.ant-row:last-child) {
+    border-bottom: none;
+  }
+  :global(.ant-col-12) {
+    padding: 5px;
+  }
+  :global(.ant-calendar-picker) {
+    width: 100% !important;
+    overflow: hidden;
+    display: block;
+  }
+  :global(.ant-select-selection--multiple) {
+    height: 32px;
+    white-space: nowrap;
+    overflow: auto;
+  }
+  :global(.ant-calendar-picker-icon) {
+    right: 5px;
+  }
+  .col-name {
+    :global(.ant-col-12) {
+      border-right: 1px solid #DDD;
+    }
+  }
+  .col-name-last {
+    border-right: none;
+    :global(.ant-col-12:last-child) {
+      border-right: none;
+    }
+  }
+}

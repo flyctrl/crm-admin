@@ -1,0 +1,138 @@
+/* stylelint-disable */
+.button-box {
+  display: flex;
+  .button {
+    margin: 0 5px;
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}
+
+.table {
+  margin: 10px 0;
+}
+
+.oper-btngroup {
+  padding-top: 30px;
+}
+
+.oper-button {
+  display: block;
+  margin: 20px auto;
+}
+
+.first-list,
+.second-list {
+  overflow-y: scroll;
+  border: 1px solid #D9D9D9;
+  border-radius: 4px;
+  min-height: 200px;
+  max-height: 300px;
+  label {
+    display: block;
+    margin-top: 8px;
+    height: 18px;
+    overflow: hidden;
+  }
+}
+
+.second-list.plat-check-list {
+  :global(.ant-checkbox) {
+    float: left;
+    top: 2px;
+  }
+  :global(.ant-checkbox) + span {
+    float: left;
+    width:162px;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    overflow:hidden;
+  }
+}
+
+.second-list {
+  padding: 10px;
+}
+
+:global(.ant-tree > li > .ant-tree-checkbox-disabled) {
+  display: none;
+}
+
+:global(.ant-table-thead .ant-table-selection) {
+  display: none;
+}
+
+.table-two {
+    margin: 10px 0;
+    :global(.ant-table-thead .ant-table-selection-column .ant-checkbox-wrapper) {
+    display: none;
+   }
+}
+.table-one {
+  margin: 10px 0;
+  :global(.ant-table-thead .ant-table-selection-column .ant-checkbox-wrapper) {
+    display: none;
+  }
+  :global(.ant-table-bordered .ant-table-tbody > tr > td) {
+    min-width: 130px;
+    max-width: 140px;
+    width: 120px;
+    max-height:54px;
+    min-height:54px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 16px 6px;
+  }
+}
+.file-tabs {
+  margin-top:25px;
+}
+.formitems-box {
+  display: table;
+  .files-form {
+    margin:30px auto;
+  }
+  :global(.ant-form-item) {
+    display: flex;
+  }
+  :global(.ant-form-item-label) {
+    width: 35%;
+    text-align: center;
+    line-height: 40px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  :global(.ant-calendar-picker) {
+    width: 100%;
+  }
+  :global(.ant-form-item-control-wrapper) {
+    min-width: 65%;
+    max-width: 65%;
+  }
+  :global(.ant-input) {
+    height: 40px;
+  }
+  :global(.ant-calendar-picker-input) {
+    height: 40px;
+  }
+  :global(.ant-select) {
+    width: 100%;
+  }
+  :global(.ant-select-selection--single) {
+    height: 40px;
+  }
+  :global(.ant-select-selection__rendered) {
+    line-height: 40px;
+  }
+  :global(.ant-col-8) {
+    padding: 0!important;
+    height: 65px;
+  }
+  :global(.ant-select-selection__rendered) {
+    max-height: 40px;
+    overflow-y: auto;
+    margin-right: 0!important;
+  }
+}

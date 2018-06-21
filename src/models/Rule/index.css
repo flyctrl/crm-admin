@@ -1,0 +1,34 @@
+/* stylelint-disable */
+.button-box {
+  display: flex;
+  .button {
+    margin: 0 5px;
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}
+
+.table {
+  margin: 10px 0;
+}
+:global(.gray){
+  color: #CCC;
+}
+
+:global(.ant-table-thead .ant-table-selection) {
+  display: none;
+}
+
+.formitems-box {
+  .files-form {
+    margin: 30px auto;
+    & >div {
+      height: 64px;
+    }
+  }
+  :global(.ant-form-item-control) {
+    line-height: normal;
+  }
+}
+
